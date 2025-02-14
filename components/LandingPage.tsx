@@ -2,6 +2,8 @@ import React from 'react';
 import { ChevronDown, Github, Linkedin, Calendar, Clock, Users, BookOpen, Mail, Phone } from 'lucide-react';
 
 const LandingPage = () => {
+  const paymentLink = "https://paystack.com/buy/machine-learning-and-ai-project-based-cohort-eeblvd";
+
   return (
     <div className="min-h-screen bg-gray-900 text-white">
       {/* Hero Section */}
@@ -19,9 +21,12 @@ const LandingPage = () => {
           <p className="text-lg md:text-xl mb-8 text-blue-400">
             Cohort Starts February 22 - Limited Slots Available!
           </p>
-          <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-all transform hover:scale-105">
+          <a 
+            href={paymentLink}
+            className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-all transform hover:scale-105"
+          >
             Apply Now
-          </button>
+          </a>
           <div className="mt-6 space-y-2 text-gray-300">
             <p>For inquiries:</p>
             <div className="flex justify-center space-x-4">
@@ -155,9 +160,12 @@ const LandingPage = () => {
           <h2 className="text-4xl font-bold mb-6">Ready to Build Your AI Portfolio?</h2>
           <p className="text-xl text-gray-300 mb-4">Cohort Starts February 22</p>
           <p className="text-lg text-blue-400 mb-8">Limited Slots Available!</p>
-          <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-12 rounded-lg text-xl transition-all transform hover:scale-105">
+          <a 
+            href={paymentLink}
+            className="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-12 rounded-lg text-xl transition-all transform hover:scale-105"
+          >
             Apply Now
-          </button>
+          </a>
           <div className="mt-6 text-gray-300">
             <p className="mb-2">Questions? Contact us:</p>
             <div className="flex justify-center space-x-4">
